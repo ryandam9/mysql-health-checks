@@ -1,24 +1,34 @@
-# Postgres DB Health checks
-A Python tool to execute Postgres DB queries to show database state/health in a HTML form. 
+# MySQL DB Health checks
+A Python tool to execute MySQL DB queries to show database state/health in a HTML form. 
 
 ## How to execute?
 
-- Update `~/.pgpass` file to include DB Host and password.
+- Create a text file `.db.txt` in user's home directory with the following contents:
+
+```shell
+host = 
+password = 
+```
+
+- Verify other parameters in `config.py` file.
+
+- Install Python packages
+    ```sh
+    pip install -r requirements.txt
+    ```
+- 
 - run 
     ```sh
     python app.py
     ```
 
+****
+
 ## HTML Report
 - HTML report will be placed in the `reports` folder.
-****
-
-## Pre-requisites
-- Python 3.8
-- Few Python packages (see `requirements.txt`)
 
 ****
-## Sample
 
-![Sample](./sample-1.jpg)
+## Sample Report
 
+****
